@@ -1,4 +1,4 @@
-cwiczenie 1
+cwiczenie 0.2.1
 ( 1+2^4)/((1)/(2+3^(1/2))-3)
 
 ans =
@@ -72,7 +72,31 @@ ans =
 
     8.9362
 
-cwiczenie2
+cwiczenie 0.2.2
 
 
+format rational
 
+
+uiopen('C:\Users\local\Documents\MATLAB\Centol\zajecia1.txt',1)
+((23)/(25)-(23)/(29))/(1.4-(3)/(17-(27)/(28)))
+
+ans =
+
+     523/4999  
+
+(0.5-(7.1-(12)/(17))/(17-(27)/(2+(3)/(7))))/((3+(4)/(19))/(25)-(26)/(29+(23)/(33)))
+
+ans =
+
+   30364/38645 
+
+(log(5+sin(8)^2))^(1/6)+atan(5*pi)
+
+ans =
+
+     467/179   
+
+
+format short
+diary off
