@@ -2273,3 +2273,169 @@ C =
             7
 
 diary off
+uiopen('C:\Users\local\Documents\MATLAB\Centol\zajecia1.txt',1)
+xd=char(imie1,imie2,imie3,imie4,imie5)
+{??? Undefined function or variable
+'imie1'.
+} 
+xd=char[imie1,imie2,imie3,imie4,imie5]
+??? xd=char[imie1,imie2,imie3,imie4,imie5]
+           |
+{Error: Unbalanced or unexpected
+parenthesis or bracket.
+} 
+xd=char('imie1','imie2','imie3','imie4','imie5')
+
+xd =
+
+imie1
+imie2
+imie3
+imie4
+imie5
+
+im=char('imie1','imie2','imie3','imie4','imie5')
+
+im =
+
+imie1
+imie2
+imie3
+imie4
+imie5
+
+naz=('nazwisko1','nazwisko2','nazwisko3','nazwisko4','nazwisko5')
+??? naz=('nazwisko1','nazwisko2','nazwisko3','nazwisko4','nazwisko5')
+                    |
+{Error: Expression or statement is
+incorrect--possibly unbalanced (, {,
+or [.
+} 
+naz=('nazwisko1','nazwisko2','nazwisko3','nazwisko4','nazwisko5')
+??? naz=('nazwisko1','nazwisko2','nazwisko3','nazwisko4','nazwisko5')
+                    |
+{Error: Expression or statement is
+incorrect--possibly unbalanced (, {,
+or [.
+} 
+naz=char('nazwisko1','nazwisko2','nazwisko3','nazwisko4','nazwisko5')
+
+naz =
+
+nazwisko1
+nazwisko2
+nazwisko3
+nazwisko4
+nazwisko5
+
+im+naz
+{??? Error using ==> plus
+Matrix dimensions must agree.
+} 
+im.+naz.
+??? im.+naz.
+       |
+{Error: Unexpected MATLAB operator.
+} 
+upper(im,3)
+{??? Error using ==> upper
+Too many input arguments.
+} 
+upper(im)
+
+ans =
+
+IMIE1
+IMIE2
+IMIE3
+IMIE4
+IMIE5
+
+lower(im)
+
+ans =
+
+imie1
+imie2
+imie3
+imie4
+imie5
+
+helpwin
+helpwin
+lower('imi')
+
+ans =
+
+imi
+
+upper('imi')
+
+ans =
+
+IMI
+
+upper im('imi')
+
+ans =
+
+IM('IMI')
+
+upper (:,1)
+{??? Undefined variable upper.
+} 
+upper im(:,1)
+
+ans =
+
+IM(:,1)
+
+im(:,1)=upper
+{??? Error using ==> upper
+Not enough input arguments.
+} 
+im(:,1)=upper(im(:,1))
+
+im =
+
+Imie1
+Imie2
+Imie3
+Imie4
+Imie5
+
+naz(:,1)=upper(naz(:,1))
+
+naz =
+
+Nazwisko1
+Nazwisko2
+Nazwisko3
+Nazwisko4
+Nazwisko5
+
+imnaz=im+naz
+{??? Error using ==> plus
+Matrix dimensions must agree.
+} 
+imnaz=strcat(im,naz)
+
+imnaz =
+
+Imie1Nazwisko1
+Imie2Nazwisko2
+Imie3Nazwisko3
+Imie4Nazwisko4
+Imie5Nazwisko5
+
+imnaz=strcat(im,' ',naz)
+
+imnaz =
+
+Imie1Nazwisko1
+Imie2Nazwisko2
+Imie3Nazwisko3
+Imie4Nazwisko4
+Imie5Nazwisko5
+
+diary off
