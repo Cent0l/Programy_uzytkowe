@@ -32,3 +32,6 @@ ezplot('(x-2)^2+(y-3)^2=9')
 >> subplot(3,2,6)
 >> plot(x,cos(3*x),'k-')
 >> hold off
+
+>r=m+s*randn(1000,1)
+hist(r,100)
